@@ -1,0 +1,129 @@
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1400px !important;
+  }
+}
+
+
+//parent component
+.wrapper-sidebar{
+  display: flex;
+}
+
+.search-filter-sidebar{
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 110px;
+  margin-right: 40px;
+  flex-direction: column;
+  .search-form{
+    box-shadow: 0 0 60px 0 rgba(6,30, 98 , 0.08);
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    .search-wrapper{
+      h2{
+        border-bottom: 1px solid #dddddd;
+      }
+      padding: 40px;
+    }
+  }
+
+
+  .filter-form{
+    box-shadow: 0 0 60px 0 rgba(6,30, 98 , 0.08);
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    .filter-wrapper{
+      padding: 40px;
+      h2{
+        border-bottom: 1px solid #dddddd;
+      }
+      .formik-filter{
+        margin-top: 20px;
+
+        .wrapper-price{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          .input-price{
+            width: 150px;
+            //font-size: 1rem !important;
+            border: 3px solid #dddddd !important;
+            border-radius: 5px;
+            outline: none !important;
+            margin-bottom: 20px !important;
+            margin-top: 20px !important;
+            padding: 10px !important;
+          }
+        }
+
+        .wrapper-input{
+          display: flex;
+          //justify-content: center;
+          align-items: center;
+          .input-review{
+            margin-right: 10px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.search-view-list{
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+
+
+@media (min-width: 768px) {
+  .search-filter-sidebar{
+    width: 28%;
+  }
+  .search-view-list{
+    width: 72%;
+  }
+}
+
+
+
+
+
+.formik-search{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  .date-input, .select-destination {
+    font-size: 1rem !important;
+    border: 3px solid #dddddd !important;
+    border-radius: 5px;
+    outline: none !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    padding: 10px !important;
+  }
+
+  .button-search{
+    margin: 10px 0;
+    .submit-search{
+      padding: 15px 20px;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: #0b7ec4;
+      border: none;
+      border-radius: 5px 5px 5px 5px;
+      outline: none;
+    }
+  }
+}
+
+
+
